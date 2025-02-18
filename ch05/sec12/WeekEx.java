@@ -8,6 +8,7 @@ public class WeekEx {
 		Week today = null;
 		Calendar cal = Calendar.getInstance();
 		
+		// 오늘 요일 얻기 (1-7)
 		int week = cal.get(Calendar.DAY_OF_WEEK);
 		
 		switch(week) {
