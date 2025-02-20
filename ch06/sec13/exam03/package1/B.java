@@ -1,30 +1,15 @@
 package ch06.sec13.exam03.package1;
 
 public class B {
-	public int field1;
-	int field2;
-	private int field3;
+	public void method() {
+		A a = new A();
 	
-	public B() {
-		field1 = 1;	// o
-		field2 = 1;	// o
-		field3 = 1;	// o
+		a.field1 = 1;	// o
+		a.field2 = 1;	// o
+		a.field3 = 1;	// x
 		
-		method1();	// o
-		method2();	// o
-		method3();	// o
+		a.method1();	// o
+		a.method2();	// o
+		a.method3();	// x
 	}
-	
-	public void method1() {
-		
-	}
-	
-	void method2() {
-		
-	}
-	
-	private void method3() {
-		
-	}
-
 }
